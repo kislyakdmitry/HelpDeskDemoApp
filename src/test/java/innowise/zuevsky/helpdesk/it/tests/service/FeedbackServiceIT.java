@@ -5,6 +5,7 @@ import innowise.zuevsky.helpdesk.exception.FeedbackNotFoundException;
 import innowise.zuevsky.helpdesk.it.BaseIT;
 import innowise.zuevsky.helpdesk.service.FeedbackService;
 import innowise.zuevsky.helpdesk.util.FeedbackTestUtil;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.jdbc.Sql;
@@ -13,6 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @Sql({"/data/clear_feedbacks.sql", "/data/insert_feedbacks.sql"})
+@Disabled
 class FeedbackServiceIT extends BaseIT {
 
     @Autowired

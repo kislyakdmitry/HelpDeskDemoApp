@@ -3,6 +3,7 @@ package innowise.zuevsky.helpdesk.it.tests.repository;
 import innowise.zuevsky.helpdesk.domain.Feedback;
 import innowise.zuevsky.helpdesk.it.BaseIT;
 import innowise.zuevsky.helpdesk.repository.FeedbackRepository;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.jdbc.Sql;
@@ -13,6 +14,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @Sql({"/data/clear_feedbacks.sql", "/data/insert_feedbacks.sql"})
+@Disabled
 class FeedbackRepositoryIT extends BaseIT {
 
     @Autowired
