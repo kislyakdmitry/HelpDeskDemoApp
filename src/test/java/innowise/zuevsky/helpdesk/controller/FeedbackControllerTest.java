@@ -49,6 +49,7 @@ class FeedbackControllerTest {
     void getFeedback_shouldReturnFeedbackDto_whenFeedbackExist() throws Exception {
         // given
         //some comment
+        //another comment
         String url = "/api/feedbacks/{feedbackId}";
         when(feedbackService.getFeedbackById(FeedbackTestUtil.FEEDBACK_ID)).thenReturn(feedbackDto);
         // when
